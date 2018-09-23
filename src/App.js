@@ -68,7 +68,7 @@ class App extends Component {
       )
     const ComponentLoading = <h1>Loading...</h1>
     return (
-      <div className="App">
+      <div className="container">
       <SearchBox onSearch={this.doSearch} />
       <h2>{this.state.searchKey}</h2>
       { this.state.loading ? ComponentLoading : Articles }

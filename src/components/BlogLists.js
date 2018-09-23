@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default () => {
+export default function BlogList ({article}) {
   return (
       <div>
-        <h1>Blog List Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore itaque consectetur totam veniam sunt deleniti quae doloremque porro laborum optio illo laboriosam eos iste a autem alias, dolore exercitationem, voluptate.</p>
+        <h1>{article.title}</h1>
+        <p>{article.content}</p>
       </div>
     )
 }
